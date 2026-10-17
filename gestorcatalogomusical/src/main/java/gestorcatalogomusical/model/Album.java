@@ -17,10 +17,10 @@ import java.util.Date;
 
 public class Album {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY);
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
     private Date release;
-    private int amount;
+    private int amountsongs;
 }

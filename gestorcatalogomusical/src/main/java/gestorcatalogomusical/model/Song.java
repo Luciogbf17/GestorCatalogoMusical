@@ -20,12 +20,13 @@ public class Song {
     private String isrc;
     private String name;
     
-    @OneToOne
+
     private Band band;
 
     private Date release;
 
-    @OneToMany
+    @ManyToOne
+    @JoinColumn(name = "album_id")
     private Album album;
 
     private String genere;
